@@ -130,3 +130,120 @@ img{
         margin-bottom: 0cm;
     }
     
+@media screen and (max-width: 917px)
+{
+    p {
+        text-align: left;
+        font-size: 1.6vw;
+        font-family: 'Roboto Bold Condensed Italic', arial;
+    }
+    .nombre {
+        text-align: left;
+        font-size: 20px;
+        font-family: 'Roboto Bold Condensed Italic', arial;
+    }
+    img{
+        width: 5vw;
+        height: auto;
+        margin:10px;
+    }
+    .cvTitule{
+        text-align: left;
+        font-size: 35px;
+        font-family:'Billabong';
+        font-weight:normal}
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .vitaeCont{
+ 
+        margin-top: 3vh;   
+        margin-bottom: 0%;      
+        padding: 8px;  
+       }
+       .vitaeContAll{
+        grid-area:vitaeContAll;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .habCont{
+        background-color: black;
+        padding: 8px;
+        margin-left: 0%;
+        margin-right: 8%;
+        z-index: 10;
+
+    } 
+    .hab{
+        grid-area:hab;
+        color: azure;
+        padding-top: 0px;
+    } 
+    .eduCont{
+        align-items:rigth;
+        background-color:#f9df64;
+        margin-top:0%; 
+        padding: 8px;
+        margin-left: 7%;
+        margin-right: 0%;
+        margin-bottom: 0%; 
+    }
+
+    .perCont{
+        background-color:#ffe0ed;
+        padding: 7px;
+        margin-left: 0%;
+        margin-right: 7%;
+        padding-top: 15px;
+    }
+    .contCont{
+        background-color:#53f106;
+        padding: 12px;
+        padding-right: 18px;
+        justify-content: left ;
+        margin-left: 0%;
+        margin-bottom: 0cm;
+    }
+    
+	.container{
+        background-color:#fabde7 ;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: repeat(10,10vh);
+        grid-template-areas:"vitae vitae"
+                            "vitae vitae"
+                            "vitae vitae"
+                            "vitae vitae"
+                            "vitae vitae"
+                            "hab cont"
+                            "hab cont"
+                            "hab per"
+                            "edu per"
+                            "edu per";    
+
+             
+       }
+       .cvTitule{
+        text-align: left;
+        font-size: 22px;
+        font-family:'Billabong';
+        font-weight:normal}
+
+        p {
+            text-align: left;
+            font-size: 10px;
+            font-family: 'Roboto Bold Condensed Italic', arial;
+        }
+        .nombre {
+            text-align: left;
+            font-size:12px;
+            font-family: 'Roboto Bold Condensed Italic', arial;
+        }
+        img{
+            width: 9vh;
+            height: auto;
+            margin:7px;
+        }
+}
