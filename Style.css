@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    text-align: left;
+    font-size: 13;
+    font-family: 'Roboto Bold Condensed Italic', arial;
+}
+.nombre {
+    text-align: left;
+    font-size: 29px;
+    font-family: 'Roboto Bold Condensed Italic', arial;
+}
+img{
+    width: 7vw;
+    height: auto;
+    margin:10px;
+}
+.container{
+    background-color:#fabde7 ;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,20vh);
+    grid-template-areas:"hab hab vitae vitae vitae per  per"
+                        "hab hab vitae vitae vitae per  per"
+                        "hab hab vitae vitae vitae per  per"
+                        "edu edu vitae vitae vitae cont cont"
+                        "edu edu vitae vitae vitae cont cont";            
+   }
+   .box{
+       text-align: center;
+       display: flex; 
+       align-items: center;
+       justify-content: center ;
+       
+   }
+   .hab{
+       grid-area:hab;
+       color: azure;
+       padding-top: 25px;
+       padding-top: 50px;
+   } 
+   .edu{
+       grid-area:edu;
+   } 
+   .per{
+       grid-area:per;
+   } 
+   .cont{
+       grid-area:cont;
+       justify-content: left ;
+   } 
+   .vitae{
+    grid-area:vitae;
+   } 
+
+   .vitaeCont{
+    -webkit-box-shadow: -52px 65px 25px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -52px 65px 25px -1px rgba(0,0,0,0.75);
+    box-shadow: -52px 65px 25px -1px rgba(0,0,0,0.75);
+    height: auto;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:"vitaeContTitule vitaeContTitule"
+                        "vitaeConFoto  vitaeContId"
+                        "vitaeContAll  vitaeContAll"; 
+    background-color: white;   
+    margin-top: 20vh;   
+    margin-bottom: 0%;      
+    padding: 18px;  
+   }
+   .boxCV{
+       text-align: left;
+       
+       align-items: center;
+       justify-content: left ;
+   }
+    .vitaeContTitule{
+    grid-area:vitaeContTitule;
+    } 
+    .vitaeConFoto{
+        grid-area:vitaeConFoto;
+    } 
+    .vitaeContId{
+        grid-area:vitaeContId;
+    } 
+    .vitaeContAll{
+        grid-area:vitaeContAll;
+        padding-right: 40px;
+        padding-left: 40px;
+    } 
+    .cvTitule{
+            text-align: left;
+            font-size: 46px;
+            font-family:'Billabong';
+            font-weight:normal
+    
+    }
+
+
+    .habCont{
+        background-color: black;
+        padding: 18px;
+        margin-left: 20%;
+        margin-right: 10%;
+    }
+    .eduCont{
+        align-items:left;
+        background-color:#f9df64;
+        margin-top:15%; 
+        padding: 18px;
+        margin-left: 7%;
+        margin-right: 26%;
+        margin-bottom: 0%; 
+    }
+    .perCont{
+        background-color:#ffe0ed;
+        padding: 14px;
+        margin-left: 4%;
+        padding-top: 39px;
+    }
+    .contCont{
+        background-color:#53f106;
+        padding: 20px;
+        padding-right: 40px;
+        justify-content: left ;
+        margin-left: -5%;
+        margin-bottom: 0cm;
+    }
+    
